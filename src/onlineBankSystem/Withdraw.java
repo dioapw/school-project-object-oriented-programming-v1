@@ -18,7 +18,6 @@ public class Withdraw {
     private int maximum_withdraw;
     private int minimum_withdraw;
     private Bank withdraw_bank;
-    private Customer withdraw_customer;
     private Account withdraw_account;
 
     /**
@@ -30,10 +29,9 @@ public class Withdraw {
      * @param maximum_withdraw
      * @param minimum_withdraw
      * @param withdraw_bank
-     * @param withdraw_customer
      * @param withdraw_account
      */
-    public Withdraw(int withdraw_id, String withdraw_description, int withdraw_amount, String withdraw_date, int maximum_withdraw, int minimum_withdraw, Bank withdraw_bank, Customer withdraw_customer, Account withdraw_account) {
+    public Withdraw(int withdraw_id, String withdraw_description, int withdraw_amount, String withdraw_date, int maximum_withdraw, int minimum_withdraw, Bank withdraw_bank, Account withdraw_account) {
         this.withdraw_id = withdraw_id;
         this.withdraw_description = withdraw_description;
         this.withdraw_amount = withdraw_amount;
@@ -41,7 +39,6 @@ public class Withdraw {
         this.maximum_withdraw = maximum_withdraw;
         this.minimum_withdraw = minimum_withdraw;
         this.withdraw_bank = withdraw_bank;
-        this.withdraw_customer = withdraw_customer;
         this.withdraw_account = withdraw_account;
     }
 
@@ -54,10 +51,9 @@ public class Withdraw {
      * @param maximum_withdraw
      * @param minimum_withdraw
      * @param withdraw_bank
-     * @param withdraw_customer
      * @param withdraw_account
      */
-    public Withdraw(int withdraw_id, String withdraw_description, int withdraw_amount, LocalDate withdraw_date, int maximum_withdraw, int minimum_withdraw, Bank withdraw_bank, Customer withdraw_customer, Account withdraw_account) {
+    public Withdraw(int withdraw_id, String withdraw_description, int withdraw_amount, LocalDate withdraw_date, int maximum_withdraw, int minimum_withdraw, Bank withdraw_bank, Account withdraw_account) {
         this.withdraw_id = withdraw_id;
         this.withdraw_description = withdraw_description;
         this.withdraw_amount = withdraw_amount;
@@ -65,7 +61,6 @@ public class Withdraw {
         this.maximum_withdraw = maximum_withdraw;
         this.minimum_withdraw = minimum_withdraw;
         this.withdraw_bank = withdraw_bank;
-        this.withdraw_customer = withdraw_customer;
         this.withdraw_account = withdraw_account;
     }
 
@@ -187,22 +182,6 @@ public class Withdraw {
      */
     public void setWithdraw_bank(Bank withdraw_bank) {
         this.withdraw_bank = withdraw_bank;
-    }
-
-    /**
-     *
-     * @return withdraw_customer
-     */
-    public Customer getWithdraw_customer() {
-        return withdraw_customer;
-    }
-
-    /**
-     *
-     * @param withdraw_customer
-     */
-    public void setWithdraw_customer(Customer withdraw_customer) {
-        this.withdraw_customer = withdraw_customer;
     }
 
     /**

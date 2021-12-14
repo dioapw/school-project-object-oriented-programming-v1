@@ -21,7 +21,6 @@ public class Loan {
     private String mothers_name;
     private Account loan_account;
     private Bank bank_loan;
-    private Customer customer_loan;
 
     /**
      *
@@ -31,22 +30,22 @@ public class Loan {
      * @param loan_description
      * @param loan_date
      * @param payment_term
+     * @param existing_loan_customer
      * @param mothers_name
      * @param loan_account
      * @param bank_loan
-     * @param customer_loan
      */
-    public Loan(int loan_id, int loan_amount, String loan_purpose, String loan_description, String loan_date, int payment_term, String mothers_name, Account loan_account, Bank bank_loan, Customer customer_loan) {
+    public Loan(int loan_id, int loan_amount, String loan_purpose, String loan_description, String loan_date, int payment_term, boolean existing_loan_customer, String mothers_name, Account loan_account, Bank bank_loan) {
         this.loan_id = loan_id;
         this.loan_amount = loan_amount;
         this.loan_purpose = loan_purpose;
         this.loan_description = loan_description;
         setLoan_date(loan_date);
         this.payment_term = payment_term;
+        this.existing_loan_customer = existing_loan_customer;
         this.mothers_name = mothers_name;
         this.loan_account = loan_account;
         this.bank_loan = bank_loan;
-        this.customer_loan = customer_loan;
     }
 
     /**
@@ -57,22 +56,22 @@ public class Loan {
      * @param loan_description
      * @param loan_date
      * @param payment_term
+     * @param existing_loan_customer
      * @param mothers_name
      * @param loan_account
      * @param bank_loan
-     * @param customer_loan
      */
-    public Loan(int loan_id, int loan_amount, String loan_purpose, String loan_description, LocalDate loan_date, int payment_term, String mothers_name, Account loan_account, Bank bank_loan, Customer customer_loan) {
+    public Loan(int loan_id, int loan_amount, String loan_purpose, String loan_description, LocalDate loan_date, int payment_term, boolean existing_loan_customer, String mothers_name, Account loan_account, Bank bank_loan) {
         this.loan_id = loan_id;
         this.loan_amount = loan_amount;
         this.loan_purpose = loan_purpose;
         this.loan_description = loan_description;
         this.loan_date = loan_date;
         this.payment_term = payment_term;
+        this.existing_loan_customer = existing_loan_customer;
         this.mothers_name = mothers_name;
         this.loan_account = loan_account;
         this.bank_loan = bank_loan;
-        this.customer_loan = customer_loan;
     }
 
     /**
@@ -241,22 +240,6 @@ public class Loan {
      */
     public void setBank_loan(Bank bank_loan) {
         this.bank_loan = bank_loan;
-    }
-
-    /**
-     *
-     * @return customer_loan
-     */
-    public Customer getCustomer_loan() {
-        return customer_loan;
-    }
-
-    /**
-     *
-     * @param customer_loan
-     */
-    public void setCustomer_loan(Customer customer_loan) {
-        this.customer_loan = customer_loan;
     }
 
 }

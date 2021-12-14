@@ -16,7 +16,6 @@ public class Deposit {
     private int deposit_amount;
     private LocalDate deposit_date;
     private Bank deposit_bank;
-    private Customer deposit_customer;
     private Account deposit_account;
     private int minimum_deposit;
 
@@ -27,17 +26,15 @@ public class Deposit {
      * @param deposit_amount
      * @param deposit_date
      * @param deposit_bank
-     * @param deposit_customer
      * @param deposit_account
      * @param minimum_deposit
      */
-    public Deposit(int deposit_id, String deposit_description, int deposit_amount, String deposit_date, Bank deposit_bank, Customer deposit_customer, Account deposit_account, int minimum_deposit) {
+    public Deposit(int deposit_id, String deposit_description, int deposit_amount, String deposit_date, Bank deposit_bank, Account deposit_account, int minimum_deposit) {
         this.deposit_id = deposit_id;
         this.deposit_description = deposit_description;
         this.deposit_amount = deposit_amount;
         setDeposit_date(deposit_date);
         this.deposit_bank = deposit_bank;
-        this.deposit_customer = deposit_customer;
         this.deposit_account = deposit_account;
         this.minimum_deposit = minimum_deposit;
     }
@@ -49,17 +46,15 @@ public class Deposit {
      * @param deposit_amount
      * @param deposit_date
      * @param deposit_bank
-     * @param deposit_customer
      * @param deposit_account
      * @param minimum_deposit
      */
-    public Deposit(int deposit_id, String deposit_description, int deposit_amount, LocalDate deposit_date, Bank deposit_bank, Customer deposit_customer, Account deposit_account, int minimum_deposit) {
+    public Deposit(int deposit_id, String deposit_description, int deposit_amount, LocalDate deposit_date, Bank deposit_bank, Account deposit_account, int minimum_deposit) {
         this.deposit_id = deposit_id;
         this.deposit_description = deposit_description;
         this.deposit_amount = deposit_amount;
         this.deposit_date = deposit_date;
         this.deposit_bank = deposit_bank;
-        this.deposit_customer = deposit_customer;
         this.deposit_account = deposit_account;
         this.minimum_deposit = minimum_deposit;
     }
@@ -150,22 +145,6 @@ public class Deposit {
      */
     public void setDeposit_bank(Bank deposit_bank) {
         this.deposit_bank = deposit_bank;
-    }
-
-    /**
-     *
-     * @return deposit_customer
-     */
-    public Customer getDeposit_customer() {
-        return deposit_customer;
-    }
-
-    /**
-     *
-     * @param deposit_customer
-     */
-    public void setDeposit_customer(Customer deposit_customer) {
-        this.deposit_customer = deposit_customer;
     }
 
     /**
