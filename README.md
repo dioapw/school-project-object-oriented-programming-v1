@@ -1,1 +1,10 @@
-# school-project-object-oriented-programming
+# Online Banking Project
+
+
+## References
+- https://creately.com/blog/examples/class-diagram-templates/
+- https://www.freeprojectz.com/uml/internet-banking-class-diagram
+- https://www.pinterest.com/pin/464011567856999572/
+- https://www.researchgate.net/figure/Class-Diagram-of-Internet-Banking-System-5-DATA-FLOW-DIAGRAM_fig8_45919149
+- https://www.researchgate.net/figure/UML-class-diagram-for-a-banking-system_fig2_275498211
+- https://www.pinterest.com/pin/495958977707621585/
