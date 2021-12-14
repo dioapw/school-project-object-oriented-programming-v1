@@ -1,5 +1,7 @@
 # Online Banking Project
 
+## Class Diagram
+![](https://github.com/dioapw/school-project-object-oriented-programming/blob/main/Online%20Banking%20Project.png)
 
 ## References
 - https://creately.com/blog/examples/class-diagram-templates/
