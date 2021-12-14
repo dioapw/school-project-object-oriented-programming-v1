@@ -12,7 +12,10 @@ import java.time.format.DateTimeFormatter;
  */
 public class User {
 
-    enum Gender {
+    /**
+     * Gender enum class
+     */
+    public enum Gender {
         MALE,
         FEMALE
     }
