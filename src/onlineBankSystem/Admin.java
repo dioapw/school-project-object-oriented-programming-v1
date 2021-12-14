@@ -1,6 +1,6 @@
 package onlineBankSystem;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  *
@@ -10,10 +10,10 @@ import java.util.ArrayList;
  */
 public class Admin {
 
-    private ArrayList<Customer> grant_customer;
-    private ArrayList<Teller> grant_teller;
-    private ArrayList<Role> grant_role;
-    private ArrayList<Permission> grant_permission;
+    private LinkedList<Customer> grant_customer;
+    private LinkedList<Teller> grant_teller;
+    private LinkedList<Role> grant_role;
+    private LinkedList<Permission> grant_permission;
 
     /**
      *
@@ -23,9 +23,13 @@ public class Admin {
      * @param grant_permission
      */
     public Admin(Customer grant_customer, Teller grant_teller, Role grant_role, Permission grant_permission) {
+        this.grant_customer = new LinkedList<>();
         this.grant_customer.add(grant_customer);
+        this.grant_teller = new LinkedList<>();
         this.grant_teller.add(grant_teller);
+        this.grant_role = new LinkedList<>();
         this.grant_role.add(grant_role);
+        this.grant_permission = new LinkedList<>();
         this.grant_permission.add(grant_permission);
     }
 
@@ -36,7 +40,7 @@ public class Admin {
      * @param grant_role
      * @param grant_permission
      */
-    public Admin(ArrayList<Customer> grant_customer, ArrayList<Teller> grant_teller, ArrayList<Role> grant_role, ArrayList<Permission> grant_permission) {
+    public Admin(LinkedList<Customer> grant_customer, LinkedList<Teller> grant_teller, LinkedList<Role> grant_role, LinkedList<Permission> grant_permission) {
         this.grant_customer = grant_customer;
         this.grant_teller = grant_teller;
         this.grant_role = grant_role;
@@ -45,9 +49,9 @@ public class Admin {
 
     /**
      *
-     * @return
+     * @return grant_customer
      */
-    public ArrayList<Customer> getGrant_customer() {
+    public LinkedList<Customer> getGrant_customer() {
         return grant_customer;
     }
 
@@ -55,7 +59,7 @@ public class Admin {
      *
      * @param grant_customer
      */
-    public void setGrant_customer(ArrayList<Customer> grant_customer) {
+    public void setGrant_customer(LinkedList<Customer> grant_customer) {
         this.grant_customer = grant_customer;
     }
 
@@ -64,14 +68,15 @@ public class Admin {
      * @param grant_customer
      */
     public void setGrant_customer(Customer grant_customer) {
+        this.grant_customer = new LinkedList<>();
         this.grant_customer.add(grant_customer);
     }
 
     /**
      *
-     * @return
+     * @return grant_teller
      */
-    public ArrayList<Teller> getGrant_teller() {
+    public LinkedList<Teller> getGrant_teller() {
         return grant_teller;
     }
 
@@ -79,7 +84,7 @@ public class Admin {
      *
      * @param grant_teller
      */
-    public void setGrant_teller(ArrayList<Teller> grant_teller) {
+    public void setGrant_teller(LinkedList<Teller> grant_teller) {
         this.grant_teller = grant_teller;
     }
 
@@ -88,14 +93,15 @@ public class Admin {
      * @param grant_teller
      */
     public void setGrant_teller(Teller grant_teller) {
+        this.grant_teller = new LinkedList<>();
         this.grant_teller.add(grant_teller);
     }
 
     /**
      *
-     * @return
+     * @return grant_role
      */
-    public ArrayList<Role> getGrant_role() {
+    public LinkedList<Role> getGrant_role() {
         return grant_role;
     }
 
@@ -103,7 +109,7 @@ public class Admin {
      *
      * @param grant_role
      */
-    public void setGrant_role(ArrayList<Role> grant_role) {
+    public void setGrant_role(LinkedList<Role> grant_role) {
         this.grant_role = grant_role;
     }
 
@@ -112,14 +118,15 @@ public class Admin {
      * @param grant_role
      */
     public void setGrant_role(Role grant_role) {
+        this.grant_role = new LinkedList<>();
         this.grant_role.add(grant_role);
     }
 
     /**
      *
-     * @return
+     * @return grant_permission
      */
-    public ArrayList<Permission> getGrant_permission() {
+    public LinkedList<Permission> getGrant_permission() {
         return grant_permission;
     }
 
@@ -127,7 +134,7 @@ public class Admin {
      *
      * @param grant_permission
      */
-    public void setGrant_permission(ArrayList<Permission> grant_permission) {
+    public void setGrant_permission(LinkedList<Permission> grant_permission) {
         this.grant_permission = grant_permission;
     }
 
@@ -136,6 +143,7 @@ public class Admin {
      * @param grant_permission
      */
     public void setGrant_permission(Permission grant_permission) {
+        this.grant_permission = new LinkedList<>();
         this.grant_permission.add(grant_permission);
     }
 

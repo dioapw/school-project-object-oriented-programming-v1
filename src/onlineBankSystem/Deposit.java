@@ -66,7 +66,7 @@ public class Deposit {
 
     /**
      *
-     * @return
+     * @return deposit_id
      */
     public int getDeposit_id() {
         return deposit_id;
@@ -82,7 +82,7 @@ public class Deposit {
 
     /**
      *
-     * @return
+     * @return deposit_description
      */
     public String getDeposit_description() {
         return deposit_description;
@@ -98,7 +98,7 @@ public class Deposit {
 
     /**
      *
-     * @return
+     * @return deposit_amount
      */
     public int getDeposit_amount() {
         return deposit_amount;
@@ -114,7 +114,7 @@ public class Deposit {
 
     /**
      *
-     * @return
+     * @return deposit_date
      */
     public LocalDate getDeposit_date() {
         return deposit_date;
@@ -138,7 +138,7 @@ public class Deposit {
 
     /**
      *
-     * @return
+     * @return deposit_bank
      */
     public Bank getDeposit_bank() {
         return deposit_bank;
@@ -154,7 +154,7 @@ public class Deposit {
 
     /**
      *
-     * @return
+     * @return deposit_customer
      */
     public Customer getDeposit_customer() {
         return deposit_customer;
@@ -170,7 +170,7 @@ public class Deposit {
 
     /**
      *
-     * @return
+     * @return deposit_account
      */
     public Account getDeposit_account() {
         return deposit_account;
@@ -186,7 +186,7 @@ public class Deposit {
 
     /**
      *
-     * @return
+     * @return minimum_deposit
      */
     public int getMinimum_deposit() {
         return minimum_deposit;

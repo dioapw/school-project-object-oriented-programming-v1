@@ -26,7 +26,7 @@ public class Role {
 
     /**
      *
-     * @return
+     * @return role_id
      */
     public int getRole_id() {
         return role_id;
@@ -42,7 +42,7 @@ public class Role {
 
     /**
      *
-     * @return
+     * @return role_title
      */
     public String getRole_title() {
         return role_title;
@@ -58,7 +58,7 @@ public class Role {
 
     /**
      *
-     * @return
+     * @return role_description
      */
     public String getRole_description() {
         return role_description;

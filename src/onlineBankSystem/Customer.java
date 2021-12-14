@@ -1,7 +1,7 @@
 package onlineBankSystem;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  *
@@ -11,9 +11,9 @@ import java.util.ArrayList;
  */
 public class Customer extends User {
 
-    private ArrayList<Card> customer_card;
+    private LinkedList<Card> customer_card;
     private Account customer_account;
-    private ArrayList<Transaction> customer_transaction;
+    private LinkedList<Transaction> customer_transaction;
 
     /**
      *
@@ -30,9 +30,9 @@ public class Customer extends User {
      */
     public Customer(Account customer_account, int user_id, String user_name, String user_email, String user_gender, String user_date_of_birth, String user_address, String user_phone, String username, String password) {
         super(user_id, user_name, user_email, user_gender, user_date_of_birth, user_address, user_phone, username, password);
-        customer_card = new ArrayList<>();
+        customer_card = new LinkedList<>();
         this.customer_account = customer_account;
-        customer_transaction = new ArrayList<>();
+        customer_transaction = new LinkedList<>();
     }
 
     /**
@@ -51,9 +51,9 @@ public class Customer extends User {
      */
     public Customer(Account customer_account, int user_id, String user_name, String user_email, int user_age, Gender user_gender, LocalDate user_date_of_birth, String user_address, String user_phone, String username, String password) {
         super(user_id, user_name, user_email, user_age, user_gender, user_date_of_birth, user_address, user_phone, username, password);
-        customer_card = new ArrayList<>();
+        customer_card = new LinkedList<>();
         this.customer_account = customer_account;
-        customer_transaction = new ArrayList<>();
+        customer_transaction = new LinkedList<>();
     }
 
     /**
@@ -71,7 +71,7 @@ public class Customer extends User {
      * @param username
      * @param password
      */
-    public Customer(ArrayList<Card> customer_card, Account customer_account, ArrayList<Transaction> customer_transaction, int user_id, String user_name, String user_email, String user_gender, String user_date_of_birth, String user_address, String user_phone, String username, String password) {
+    public Customer(LinkedList<Card> customer_card, Account customer_account, LinkedList<Transaction> customer_transaction, int user_id, String user_name, String user_email, String user_gender, String user_date_of_birth, String user_address, String user_phone, String username, String password) {
         super(user_id, user_name, user_email, user_gender, user_date_of_birth, user_address, user_phone, username, password);
         this.customer_card = customer_card;
         this.customer_account = customer_account;
@@ -94,7 +94,7 @@ public class Customer extends User {
      * @param username
      * @param password
      */
-    public Customer(ArrayList<Card> customer_card, Account customer_account, ArrayList<Transaction> customer_transaction, int user_id, String user_name, String user_email, int user_age, Gender user_gender, LocalDate user_date_of_birth, String user_address, String user_phone, String username, String password) {
+    public Customer(LinkedList<Card> customer_card, Account customer_account, LinkedList<Transaction> customer_transaction, int user_id, String user_name, String user_email, int user_age, Gender user_gender, LocalDate user_date_of_birth, String user_address, String user_phone, String username, String password) {
         super(user_id, user_name, user_email, user_age, user_gender, user_date_of_birth, user_address, user_phone, username, password);
         this.customer_card = customer_card;
         this.customer_account = customer_account;
@@ -118,8 +118,10 @@ public class Customer extends User {
      */
     public Customer(Card customer_card, Account customer_account, Transaction customer_transaction, int user_id, String user_name, String user_email, String user_gender, String user_date_of_birth, String user_address, String user_phone, String username, String password) {
         super(user_id, user_name, user_email, user_gender, user_date_of_birth, user_address, user_phone, username, password);
+        this.customer_card = new LinkedList<>();
         this.customer_card.add(customer_card);
         this.customer_account = customer_account;
+        this.customer_transaction = new LinkedList<>();
         this.customer_transaction.add(customer_transaction);
     }
 
@@ -141,16 +143,18 @@ public class Customer extends User {
      */
     public Customer(Card customer_card, Account customer_account, Transaction customer_transaction, int user_id, String user_name, String user_email, int user_age, Gender user_gender, LocalDate user_date_of_birth, String user_address, String user_phone, String username, String password) {
         super(user_id, user_name, user_email, user_age, user_gender, user_date_of_birth, user_address, user_phone, username, password);
+        this.customer_card = new LinkedList<>();
         this.customer_card.add(customer_card);
         this.customer_account = customer_account;
+        this.customer_transaction = new LinkedList<>();
         this.customer_transaction.add(customer_transaction);
     }
 
     /**
      *
-     * @return
+     * @return customer_card
      */
-    public ArrayList<Card> getCustomer_card() {
+    public LinkedList<Card> getCustomer_card() {
         return customer_card;
     }
 
@@ -158,7 +162,7 @@ public class Customer extends User {
      *
      * @param customer_card
      */
-    public void setCustomer_card(ArrayList<Card> customer_card) {
+    public void setCustomer_card(LinkedList<Card> customer_card) {
         this.customer_card = customer_card;
     }
 
@@ -172,7 +176,7 @@ public class Customer extends User {
 
     /**
      *
-     * @return
+     * @return customer_account
      */
     public Account getCustomer_account() {
         return customer_account;
@@ -188,9 +192,9 @@ public class Customer extends User {
 
     /**
      *
-     * @return
+     * @return customer_transaction
      */
-    public ArrayList<Transaction> getCustomer_transaction() {
+    public LinkedList<Transaction> getCustomer_transaction() {
         return customer_transaction;
     }
 
@@ -198,7 +202,7 @@ public class Customer extends User {
      *
      * @param customer_transaction
      */
-    public void setCustomer_transaction(ArrayList<Transaction> customer_transaction) {
+    public void setCustomer_transaction(LinkedList<Transaction> customer_transaction) {
         this.customer_transaction = customer_transaction;
     }
 

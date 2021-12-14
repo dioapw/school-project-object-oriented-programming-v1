@@ -28,7 +28,7 @@ public class DebitCard extends Card {
 
     /**
      *
-     * @return
+     * @return debit_card_type
      */
     public String getDebit_card_type() {
         return debit_card_type;

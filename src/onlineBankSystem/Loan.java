@@ -17,7 +17,7 @@ public class Loan {
     private String loan_description;
     private LocalDate loan_date;
     private int payment_term;
-    private boolean existing_loan_customer = false;
+    private boolean existing_loan_customer;
     private String mothers_name;
     private Account loan_account;
     private Bank bank_loan;
@@ -77,7 +77,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return loan_id
      */
     public int getLoan_id() {
         return loan_id;
@@ -93,7 +93,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return loan_amount
      */
     public int getLoan_amount() {
         return loan_amount;
@@ -109,7 +109,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return loan_purpose
      */
     public String getLoan_purpose() {
         return loan_purpose;
@@ -125,7 +125,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return loan_description
      */
     public String getLoan_description() {
         return loan_description;
@@ -141,7 +141,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return loan_date
      */
     public LocalDate getLoan_date() {
         return loan_date;
@@ -165,7 +165,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return payment_term
      */
     public int getPayment_term() {
         return payment_term;
@@ -181,7 +181,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return existing_loan_customer
      */
     public boolean isExisting_loan_customer() {
         return existing_loan_customer;
@@ -197,7 +197,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return mothers_name
      */
     public String getMothers_name() {
         return mothers_name;
@@ -213,7 +213,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return loan_account
      */
     public Account getLoan_account() {
         return loan_account;
@@ -229,7 +229,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return bank_loan
      */
     public Bank getBank_loan() {
         return bank_loan;
@@ -245,7 +245,7 @@ public class Loan {
 
     /**
      *
-     * @return
+     * @return customer_loan
      */
     public Customer getCustomer_loan() {
         return customer_loan;

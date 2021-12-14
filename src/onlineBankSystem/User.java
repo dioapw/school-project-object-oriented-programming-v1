@@ -81,7 +81,7 @@ public class User {
 
     /**
      *
-     * @return
+     * @return user_id
      */
     public int getUser_id() {
         return user_id;
@@ -97,7 +97,7 @@ public class User {
 
     /**
      *
-     * @return
+     * @return user_name
      */
     public String getUser_name() {
         return user_name;
@@ -113,7 +113,7 @@ public class User {
 
     /**
      *
-     * @return
+     * @return user_email
      */
     public String getUser_email() {
         return user_email;
@@ -129,7 +129,7 @@ public class User {
 
     /**
      *
-     * @return
+     * @return user_age
      */
     public int getUser_age() {
         return user_age;
@@ -154,7 +154,7 @@ public class User {
 
     /**
      *
-     * @return
+     * @return user_gender
      */
     public Gender getUser_gender() {
         return user_gender;
@@ -192,7 +192,7 @@ public class User {
 
     /**
      *
-     * @return
+     * @return user_date_of_birth
      */
     public LocalDate getUser_date_of_birth() {
         return user_date_of_birth;
@@ -216,7 +216,7 @@ public class User {
 
     /**
      *
-     * @return
+     * @return user_address
      */
     public String getUser_address() {
         return user_address;
@@ -232,7 +232,7 @@ public class User {
 
     /**
      *
-     * @return
+     * @return user_phone
      */
     public String getUser_phone() {
         return user_phone;
@@ -248,7 +248,7 @@ public class User {
 
     /**
      *
-     * @return
+     * @return username
      */
     public String getUsername() {
         return username;
@@ -264,7 +264,7 @@ public class User {
 
     /**
      *
-     * @return
+     * @return password
      */
     public String getPassword() {
         return password;

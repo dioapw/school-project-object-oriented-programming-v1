@@ -35,7 +35,7 @@ public class Account {
 
     /**
      *
-     * @return
+     * @return account_id
      */
     public int getAccount_id() {
         return account_id;
@@ -51,7 +51,7 @@ public class Account {
 
     /**
      *
-     * @return
+     * @return account_number
      */
     public int getAccount_number() {
         return account_number;
@@ -67,7 +67,7 @@ public class Account {
 
     /**
      *
-     * @return
+     * @return account_type
      */
     public String getAccount_type() {
         return account_type;
@@ -83,7 +83,7 @@ public class Account {
 
     /**
      *
-     * @return
+     * @return account_balance
      */
     public int getAccount_balance() {
         return account_balance;
@@ -99,7 +99,7 @@ public class Account {
 
     /**
      *
-     * @return
+     * @return account_description
      */
     public String getAccount_description() {
         return account_description;
@@ -115,7 +115,7 @@ public class Account {
 
     /**
      *
-     * @return
+     * @return account_bank
      */
     public Bank getAccount_bank() {
         return account_bank;

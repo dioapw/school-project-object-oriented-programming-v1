@@ -61,7 +61,7 @@ public class Transaction {
 
     /**
      *
-     * @return
+     * @return transaction_id
      */
     public int getTransaction_id() {
         return transaction_id;
@@ -77,7 +77,7 @@ public class Transaction {
 
     /**
      *
-     * @return
+     * @return transaction_type
      */
     public String getTransaction_type() {
         return transaction_type;
@@ -93,7 +93,7 @@ public class Transaction {
 
     /**
      *
-     * @return
+     * @return transaction_name
      */
     public String getTransaction_name() {
         return transaction_name;
@@ -109,7 +109,7 @@ public class Transaction {
 
     /**
      *
-     * @return
+     * @return transaction_descriptions
      */
     public String getTransaction_descriptions() {
         return transaction_descriptions;
@@ -125,7 +125,7 @@ public class Transaction {
 
     /**
      *
-     * @return
+     * @return transaction_amount
      */
     public int getTransaction_amount() {
         return transaction_amount;
@@ -141,7 +141,7 @@ public class Transaction {
 
     /**
      *
-     * @return
+     * @return transaction_date
      */
     public LocalDate getTransaction_date() {
         return transaction_date;
@@ -165,7 +165,7 @@ public class Transaction {
 
     /**
      *
-     * @return
+     * @return transaction_bank
      */
     public Bank getTransaction_bank() {
         return transaction_bank;

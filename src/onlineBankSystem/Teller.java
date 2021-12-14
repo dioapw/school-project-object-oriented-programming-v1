@@ -1,7 +1,7 @@
 package onlineBankSystem;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  *
@@ -13,10 +13,10 @@ public class Teller extends User {
 
     private Customer customer;
     private Account customer_account;
-    private ArrayList<Deposit> customer_deposit;
-    private ArrayList<Withdraw> customer_withdraw;
-    private ArrayList<Card> customer_card;
-    private ArrayList<Loan> customer_loan;
+    private LinkedList<Deposit> customer_deposit;
+    private LinkedList<Withdraw> customer_withdraw;
+    private LinkedList<Card> customer_card;
+    private LinkedList<Loan> customer_loan;
 
     /**
      *
@@ -40,9 +40,13 @@ public class Teller extends User {
         super(user_id, user_name, user_email, user_gender, user_date_of_birth, user_address, user_phone, username, password);
         this.customer = customer;
         this.customer_account = customer_account;
+        this.customer_deposit = new LinkedList<>();
         this.customer_deposit.add(customer_deposit);
+        this.customer_withdraw = new LinkedList<>();
         this.customer_withdraw.add(customer_withdraw);
+        this.customer_card = new LinkedList<>();
         this.customer_card.add(customer_card);
+        this.customer_loan = new LinkedList<>();
         this.customer_loan.add(customer_loan);
     }
 
@@ -69,9 +73,13 @@ public class Teller extends User {
         super(user_id, user_name, user_email, user_age, user_gender, user_date_of_birth, user_address, user_phone, username, password);
         this.customer = customer;
         this.customer_account = customer_account;
+        this.customer_deposit = new LinkedList<>();
         this.customer_deposit.add(customer_deposit);
+        this.customer_withdraw = new LinkedList<>();
         this.customer_withdraw.add(customer_withdraw);
+        this.customer_card = new LinkedList<>();
         this.customer_card.add(customer_card);
+        this.customer_loan = new LinkedList<>();
         this.customer_loan.add(customer_loan);
     }
 
@@ -93,7 +101,7 @@ public class Teller extends User {
      * @param username
      * @param password
      */
-    public Teller(Customer customer, Account customer_account, ArrayList<Deposit> customer_deposit, ArrayList<Withdraw> customer_withdraw, ArrayList<Card> customer_card, ArrayList<Loan> customer_loan, int user_id, String user_name, String user_email, String user_gender, String user_date_of_birth, String user_address, String user_phone, String username, String password) {
+    public Teller(Customer customer, Account customer_account, LinkedList<Deposit> customer_deposit, LinkedList<Withdraw> customer_withdraw, LinkedList<Card> customer_card, LinkedList<Loan> customer_loan, int user_id, String user_name, String user_email, String user_gender, String user_date_of_birth, String user_address, String user_phone, String username, String password) {
         super(user_id, user_name, user_email, user_gender, user_date_of_birth, user_address, user_phone, username, password);
         this.customer = customer;
         this.customer_account = customer_account;
@@ -122,7 +130,7 @@ public class Teller extends User {
      * @param username
      * @param password
      */
-    public Teller(Customer customer, Account customer_account, ArrayList<Deposit> customer_deposit, ArrayList<Withdraw> customer_withdraw, ArrayList<Card> customer_card, ArrayList<Loan> customer_loan, int user_id, String user_name, String user_email, int user_age, Gender user_gender, LocalDate user_date_of_birth, String user_address, String user_phone, String username, String password) {
+    public Teller(Customer customer, Account customer_account, LinkedList<Deposit> customer_deposit, LinkedList<Withdraw> customer_withdraw, LinkedList<Card> customer_card, LinkedList<Loan> customer_loan, int user_id, String user_name, String user_email, int user_age, Gender user_gender, LocalDate user_date_of_birth, String user_address, String user_phone, String username, String password) {
         super(user_id, user_name, user_email, user_age, user_gender, user_date_of_birth, user_address, user_phone, username, password);
         this.customer = customer;
         this.customer_account = customer_account;
@@ -134,7 +142,7 @@ public class Teller extends User {
 
     /**
      *
-     * @return
+     * @return customer
      */
     public Customer getCustomer() {
         return customer;
@@ -150,7 +158,7 @@ public class Teller extends User {
 
     /**
      *
-     * @return
+     * @return customer_account
      */
     public Account getCustomer_account() {
         return customer_account;
@@ -166,9 +174,9 @@ public class Teller extends User {
 
     /**
      *
-     * @return
+     * @return customer_deposit
      */
-    public ArrayList<Deposit> getCustomer_deposit() {
+    public LinkedList<Deposit> getCustomer_deposit() {
         return customer_deposit;
     }
 
@@ -176,7 +184,7 @@ public class Teller extends User {
      *
      * @param customer_deposit
      */
-    public void setCustomer_deposit(ArrayList<Deposit> customer_deposit) {
+    public void setCustomer_deposit(LinkedList<Deposit> customer_deposit) {
         this.customer_deposit = customer_deposit;
     }
 
@@ -190,9 +198,9 @@ public class Teller extends User {
 
     /**
      *
-     * @return
+     * @return customer_withdraw
      */
-    public ArrayList<Withdraw> getCustomer_withdraw() {
+    public LinkedList<Withdraw> getCustomer_withdraw() {
         return customer_withdraw;
     }
 
@@ -200,7 +208,7 @@ public class Teller extends User {
      *
      * @param customer_withdraw
      */
-    public void setCustomer_withdraw(ArrayList<Withdraw> customer_withdraw) {
+    public void setCustomer_withdraw(LinkedList<Withdraw> customer_withdraw) {
         this.customer_withdraw = customer_withdraw;
     }
 
@@ -214,9 +222,9 @@ public class Teller extends User {
 
     /**
      *
-     * @return
+     * @return customer_card
      */
-    public ArrayList<Card> getCustomer_card() {
+    public LinkedList<Card> getCustomer_card() {
         return customer_card;
     }
 
@@ -224,7 +232,7 @@ public class Teller extends User {
      *
      * @param customer_card
      */
-    public void setCustomer_card(ArrayList<Card> customer_card) {
+    public void setCustomer_card(LinkedList<Card> customer_card) {
         this.customer_card = customer_card;
     }
 
@@ -238,9 +246,9 @@ public class Teller extends User {
 
     /**
      *
-     * @return
+     * @return customer_loan
      */
-    public ArrayList<Loan> getCustomer_loan() {
+    public LinkedList<Loan> getCustomer_loan() {
         return customer_loan;
     }
 
@@ -248,7 +256,7 @@ public class Teller extends User {
      *
      * @param customer_loan
      */
-    public void setCustomer_loan(ArrayList<Loan> customer_loan) {
+    public void setCustomer_loan(LinkedList<Loan> customer_loan) {
         this.customer_loan = customer_loan;
     }
 

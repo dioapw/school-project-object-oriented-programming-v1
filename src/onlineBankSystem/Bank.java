@@ -63,7 +63,7 @@ public class Bank {
 
     /**
      *
-     * @return
+     * @return bank_id
      */
     public int getBank_id() {
         return bank_id;
@@ -79,7 +79,7 @@ public class Bank {
 
     /**
      *
-     * @return
+     * @return bank_name
      */
     public String getBank_name() {
         return bank_name;
@@ -95,7 +95,7 @@ public class Bank {
 
     /**
      *
-     * @return
+     * @return bank_branch
      */
     public String getBank_branch() {
         return bank_branch;
@@ -111,7 +111,7 @@ public class Bank {
 
     /**
      *
-     * @return
+     * @return bank_code
      */
     public int getBank_code() {
         return bank_code;
@@ -127,7 +127,7 @@ public class Bank {
 
     /**
      *
-     * @return
+     * @return bank_place
      */
     public String getBank_place() {
         return bank_place;
@@ -143,7 +143,7 @@ public class Bank {
 
     /**
      *
-     * @return
+     * @return bank_type
      */
     public BankType getBank_type() {
         return bank_type;
@@ -154,9 +154,7 @@ public class Bank {
      * @param bank_type
      */
     public void setBank_type(String bank_type) {
-        if (null == bank_type) {
-            System.out.println("Empty Input");
-        } else {
+        if (null != bank_type) {
             switch (bank_type) {
                 case "public":
                     this.bank_type = BankType.PUBLIC;
@@ -168,6 +166,8 @@ public class Bank {
                     System.out.println("False Input of Bank Type");
                     break;
             }
+        } else {
+            System.out.println("Empty Input");
         }
     }
 
@@ -181,7 +181,7 @@ public class Bank {
 
     /**
      *
-     * @return
+     * @return bank_description
      */
     public String getBank_description() {
         return bank_description;

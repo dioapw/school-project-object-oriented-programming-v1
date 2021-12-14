@@ -29,7 +29,7 @@ public class Permission {
 
     /**
      *
-     * @return
+     * @return permission_id
      */
     public int getPermission_id() {
         return permission_id;
@@ -45,7 +45,7 @@ public class Permission {
 
     /**
      *
-     * @return
+     * @return permission_class
      */
     public String getPermission_class() {
         return permission_class;
@@ -61,7 +61,7 @@ public class Permission {
 
     /**
      *
-     * @return
+     * @return permission_name
      */
     public String getPermission_name() {
         return permission_name;
@@ -77,7 +77,7 @@ public class Permission {
 
     /**
      *
-     * @return
+     * @return permission_description
      */
     public String getPermission_description() {
         return permission_description;

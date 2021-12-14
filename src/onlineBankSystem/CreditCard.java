@@ -77,7 +77,7 @@ public class CreditCard extends Card {
 
     /**
      *
-     * @return
+     * @return payment_term
      */
     public int getPayment_term() {
         return payment_term;
@@ -93,7 +93,7 @@ public class CreditCard extends Card {
 
     /**
      *
-     * @return
+     * @return start_date
      */
     public LocalDate getStart_date() {
         return start_date;
@@ -117,7 +117,7 @@ public class CreditCard extends Card {
 
     /**
      *
-     * @return
+     * @return due_date
      */
     public LocalDate getDue_date() {
         return due_date;
@@ -141,7 +141,7 @@ public class CreditCard extends Card {
 
     /**
      *
-     * @return
+     * @return insurance
      */
     public String getInsurance() {
         return insurance;
@@ -157,7 +157,7 @@ public class CreditCard extends Card {
 
     /**
      *
-     * @return
+     * @return remaining_payment
      */
     public int getRemaining_payment() {
         return remaining_payment;
@@ -173,7 +173,7 @@ public class CreditCard extends Card {
 
     /**
      *
-     * @return
+     * @return heir
      */
     public String getHeir() {
         return heir;
@@ -189,7 +189,7 @@ public class CreditCard extends Card {
 
     /**
      *
-     * @return
+     * @return limit
      */
     public int getLimit() {
         return limit;

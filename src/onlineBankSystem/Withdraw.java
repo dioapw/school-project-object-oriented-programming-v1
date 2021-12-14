@@ -71,7 +71,7 @@ public class Withdraw {
 
     /**
      *
-     * @return
+     * @return withdraw_id
      */
     public int getWithdraw_id() {
         return withdraw_id;
@@ -87,7 +87,7 @@ public class Withdraw {
 
     /**
      *
-     * @return
+     * @return withdraw_description
      */
     public String getWithdraw_description() {
         return withdraw_description;
@@ -103,7 +103,7 @@ public class Withdraw {
 
     /**
      *
-     * @return
+     * @return withdraw_amount
      */
     public int getWithdraw_amount() {
         return withdraw_amount;
@@ -119,7 +119,7 @@ public class Withdraw {
 
     /**
      *
-     * @return
+     * @return withdraw_date
      */
     public LocalDate getWithdraw_date() {
         return withdraw_date;
@@ -143,7 +143,7 @@ public class Withdraw {
 
     /**
      *
-     * @return
+     * @return maximum_withdraw
      */
     public int getMaximum_withdraw() {
         return maximum_withdraw;
@@ -159,7 +159,7 @@ public class Withdraw {
 
     /**
      *
-     * @return
+     * @return minimum_withdraw
      */
     public int getMinimum_withdraw() {
         return minimum_withdraw;
@@ -175,7 +175,7 @@ public class Withdraw {
 
     /**
      *
-     * @return
+     * @return withdraw_bank
      */
     public Bank getWithdraw_bank() {
         return withdraw_bank;
@@ -191,7 +191,7 @@ public class Withdraw {
 
     /**
      *
-     * @return
+     * @return withdraw_customer
      */
     public Customer getWithdraw_customer() {
         return withdraw_customer;
@@ -207,7 +207,7 @@ public class Withdraw {
 
     /**
      *
-     * @return
+     * @return withdraw_account
      */
     public Account getWithdraw_account() {
         return withdraw_account;

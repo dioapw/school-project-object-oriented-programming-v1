@@ -46,7 +46,7 @@ public class FundTransfer extends Transaction {
 
     /**
      *
-     * @return
+     * @return transaction_fund
      */
     public int getTransaction_fund() {
         return transaction_fund;

@@ -38,7 +38,7 @@ public class Card {
 
     /**
      *
-     * @return
+     * @return card_id
      */
     public int getCard_id() {
         return card_id;
@@ -54,7 +54,7 @@ public class Card {
 
     /**
      *
-     * @return
+     * @return card_pin
      */
     public int getCard_pin() {
         return card_pin;
@@ -70,7 +70,7 @@ public class Card {
 
     /**
      *
-     * @return
+     * @return card_description
      */
     public String getCard_description() {
         return card_description;
@@ -86,7 +86,7 @@ public class Card {
 
     /**
      *
-     * @return
+     * @return card_amount
      */
     public int getCard_amount() {
         return card_amount;
@@ -102,7 +102,7 @@ public class Card {
 
     /**
      *
-     * @return
+     * @return card_name
      */
     public String getCard_name() {
         return card_name;
@@ -118,7 +118,7 @@ public class Card {
 
     /**
      *
-     * @return
+     * @return card_type
      */
     public String getCard_type() {
         return card_type;
@@ -134,7 +134,7 @@ public class Card {
 
     /**
      *
-     * @return
+     * @return card_bank
      */
     public Bank getCard_bank() {
         return card_bank;

@@ -97,7 +97,7 @@ public class Bill extends Transaction {
 
     /**
      *
-     * @return
+     * @return start_date
      */
     public LocalDate getStart_date() {
         return start_date;
@@ -121,7 +121,7 @@ public class Bill extends Transaction {
 
     /**
      *
-     * @return
+     * @return expiration_date
      */
     public LocalDate getExpiration_date() {
         return expiration_date;
@@ -145,7 +145,7 @@ public class Bill extends Transaction {
 
     /**
      *
-     * @return
+     * @return status
      */
     public String getStatus() {
         return status;
