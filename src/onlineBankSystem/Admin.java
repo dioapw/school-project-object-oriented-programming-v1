@@ -1,5 +1,6 @@
 package onlineBankSystem;
 
+import java.time.LocalDate;
 import java.util.LinkedList;
 
 /**
@@ -8,7 +9,7 @@ import java.util.LinkedList;
  * @NIM 1301194290
  *
  */
-public class Admin {
+public class Admin extends User {
 
     private LinkedList<Customer> grant_customer;
     private LinkedList<Teller> grant_teller;
@@ -17,34 +18,35 @@ public class Admin {
 
     /**
      *
-     * @param grant_customer
-     * @param grant_teller
-     * @param grant_role
-     * @param grant_permission
+     * @param user_id
+     * @param user_name
+     * @param user_email
+     * @param user_gender
+     * @param user_date_of_birth
+     * @param user_address
+     * @param user_phone
+     * @param username
+     * @param password
      */
-    public Admin(Customer grant_customer, Teller grant_teller, Role grant_role, Permission grant_permission) {
-        this.grant_customer = new LinkedList<>();
-        this.grant_customer.add(grant_customer);
-        this.grant_teller = new LinkedList<>();
-        this.grant_teller.add(grant_teller);
-        this.grant_role = new LinkedList<>();
-        this.grant_role.add(grant_role);
-        this.grant_permission = new LinkedList<>();
-        this.grant_permission.add(grant_permission);
+    public Admin(int user_id, String user_name, String user_email, String user_gender, String user_date_of_birth, String user_address, String user_phone, String username, String password) {
+        super(user_id, user_name, user_email, user_gender, user_date_of_birth, user_address, user_phone, username, password);
     }
 
     /**
      *
-     * @param grant_customer
-     * @param grant_teller
-     * @param grant_role
-     * @param grant_permission
+     * @param user_id
+     * @param user_name
+     * @param user_email
+     * @param user_age
+     * @param user_gender
+     * @param user_date_of_birth
+     * @param user_address
+     * @param user_phone
+     * @param username
+     * @param password
      */
-    public Admin(LinkedList<Customer> grant_customer, LinkedList<Teller> grant_teller, LinkedList<Role> grant_role, LinkedList<Permission> grant_permission) {
-        this.grant_customer = grant_customer;
-        this.grant_teller = grant_teller;
-        this.grant_role = grant_role;
-        this.grant_permission = grant_permission;
+    public Admin(int user_id, String user_name, String user_email, int user_age, Gender user_gender, LocalDate user_date_of_birth, String user_address, String user_phone, String username, String password) {
+        super(user_id, user_name, user_email, user_age, user_gender, user_date_of_birth, user_address, user_phone, username, password);
     }
 
     /**

@@ -165,9 +165,7 @@ public class User {
      * @param user_gender
      */
     public void setUser_gender(String user_gender) {
-        if (null == user_gender) {
-            System.out.println("Empty Input");
-        } else {
+        if (null != user_gender) {
             switch (user_gender) {
                 case "male":
                     this.user_gender = Gender.MALE;
@@ -179,6 +177,8 @@ public class User {
                     System.out.println("False Input of Gender");
                     break;
             }
+        } else {
+            System.out.println("Empty Input");
         }
     }
 

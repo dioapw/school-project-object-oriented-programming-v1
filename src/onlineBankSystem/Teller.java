@@ -20,12 +20,6 @@ public class Teller extends User {
 
     /**
      *
-     * @param customer
-     * @param customer_account
-     * @param customer_deposit
-     * @param customer_withdraw
-     * @param customer_card
-     * @param customer_loan
      * @param user_id
      * @param user_name
      * @param user_email
@@ -36,28 +30,12 @@ public class Teller extends User {
      * @param username
      * @param password
      */
-    public Teller(Customer customer, Account customer_account, Deposit customer_deposit, Withdraw customer_withdraw, Card customer_card, Loan customer_loan, int user_id, String user_name, String user_email, String user_gender, String user_date_of_birth, String user_address, String user_phone, String username, String password) {
+    public Teller(int user_id, String user_name, String user_email, String user_gender, String user_date_of_birth, String user_address, String user_phone, String username, String password) {
         super(user_id, user_name, user_email, user_gender, user_date_of_birth, user_address, user_phone, username, password);
-        this.customer = customer;
-        this.customer_account = customer_account;
-        this.customer_deposit = new LinkedList<>();
-        this.customer_deposit.add(customer_deposit);
-        this.customer_withdraw = new LinkedList<>();
-        this.customer_withdraw.add(customer_withdraw);
-        this.customer_card = new LinkedList<>();
-        this.customer_card.add(customer_card);
-        this.customer_loan = new LinkedList<>();
-        this.customer_loan.add(customer_loan);
     }
 
     /**
      *
-     * @param customer
-     * @param customer_account
-     * @param customer_deposit
-     * @param customer_withdraw
-     * @param customer_card
-     * @param customer_loan
      * @param user_id
      * @param user_name
      * @param user_email
@@ -69,75 +47,8 @@ public class Teller extends User {
      * @param username
      * @param password
      */
-    public Teller(Customer customer, Account customer_account, Deposit customer_deposit, Withdraw customer_withdraw, Card customer_card, Loan customer_loan, int user_id, String user_name, String user_email, int user_age, Gender user_gender, LocalDate user_date_of_birth, String user_address, String user_phone, String username, String password) {
+    public Teller(int user_id, String user_name, String user_email, int user_age, Gender user_gender, LocalDate user_date_of_birth, String user_address, String user_phone, String username, String password) {
         super(user_id, user_name, user_email, user_age, user_gender, user_date_of_birth, user_address, user_phone, username, password);
-        this.customer = customer;
-        this.customer_account = customer_account;
-        this.customer_deposit = new LinkedList<>();
-        this.customer_deposit.add(customer_deposit);
-        this.customer_withdraw = new LinkedList<>();
-        this.customer_withdraw.add(customer_withdraw);
-        this.customer_card = new LinkedList<>();
-        this.customer_card.add(customer_card);
-        this.customer_loan = new LinkedList<>();
-        this.customer_loan.add(customer_loan);
-    }
-
-    /**
-     *
-     * @param customer
-     * @param customer_account
-     * @param customer_deposit
-     * @param customer_withdraw
-     * @param customer_card
-     * @param customer_loan
-     * @param user_id
-     * @param user_name
-     * @param user_email
-     * @param user_gender
-     * @param user_date_of_birth
-     * @param user_address
-     * @param user_phone
-     * @param username
-     * @param password
-     */
-    public Teller(Customer customer, Account customer_account, LinkedList<Deposit> customer_deposit, LinkedList<Withdraw> customer_withdraw, LinkedList<Card> customer_card, LinkedList<Loan> customer_loan, int user_id, String user_name, String user_email, String user_gender, String user_date_of_birth, String user_address, String user_phone, String username, String password) {
-        super(user_id, user_name, user_email, user_gender, user_date_of_birth, user_address, user_phone, username, password);
-        this.customer = customer;
-        this.customer_account = customer_account;
-        this.customer_deposit = customer_deposit;
-        this.customer_withdraw = customer_withdraw;
-        this.customer_card = customer_card;
-        this.customer_loan = customer_loan;
-    }
-
-    /**
-     *
-     * @param customer
-     * @param customer_account
-     * @param customer_deposit
-     * @param customer_withdraw
-     * @param customer_card
-     * @param customer_loan
-     * @param user_id
-     * @param user_name
-     * @param user_email
-     * @param user_age
-     * @param user_gender
-     * @param user_date_of_birth
-     * @param user_address
-     * @param user_phone
-     * @param username
-     * @param password
-     */
-    public Teller(Customer customer, Account customer_account, LinkedList<Deposit> customer_deposit, LinkedList<Withdraw> customer_withdraw, LinkedList<Card> customer_card, LinkedList<Loan> customer_loan, int user_id, String user_name, String user_email, int user_age, Gender user_gender, LocalDate user_date_of_birth, String user_address, String user_phone, String username, String password) {
-        super(user_id, user_name, user_email, user_age, user_gender, user_date_of_birth, user_address, user_phone, username, password);
-        this.customer = customer;
-        this.customer_account = customer_account;
-        this.customer_deposit = customer_deposit;
-        this.customer_withdraw = customer_withdraw;
-        this.customer_card = customer_card;
-        this.customer_loan = customer_loan;
     }
 
     /**
@@ -193,6 +104,7 @@ public class Teller extends User {
      * @param customer_deposit
      */
     public void setCustomer_deposit(Deposit customer_deposit) {
+        this.customer_deposit = new LinkedList<>();
         this.customer_deposit.add(customer_deposit);
     }
 
@@ -217,6 +129,7 @@ public class Teller extends User {
      * @param customer_withdraw
      */
     public void setCustomer_withdraw(Withdraw customer_withdraw) {
+        this.customer_withdraw = new LinkedList<>();
         this.customer_withdraw.add(customer_withdraw);
     }
 
@@ -241,6 +154,7 @@ public class Teller extends User {
      * @param customer_card
      */
     public void setCustomer_card(Card customer_card) {
+        this.customer_card = new LinkedList<>();
         this.customer_card.add(customer_card);
     }
 
@@ -265,6 +179,7 @@ public class Teller extends User {
      * @param customer_loan
      */
     public void setCustomer_loan(Loan customer_loan) {
+        this.customer_loan = new LinkedList<>();
         this.customer_loan.add(customer_loan);
     }
 
