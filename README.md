@@ -1,4 +1,4 @@
-# Online Banking Project - V1
+# Banking Management System - V1
 
 ## Class Diagram
 ![](https://github.com/dioapw/school-project-object-oriented-programming/blob/main/Online%20Banking%20Project.png)
